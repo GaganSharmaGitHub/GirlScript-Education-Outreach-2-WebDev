@@ -1,4 +1,4 @@
-# GirlScript-Education-Outreach-2-WebDev
+g# GirlScript-Education-Outreach-2-WebDev
 7 day web development course organised by girlscript. Mentor: Gagan Sharma
 ## Links
 #### Course outline
@@ -31,4 +31,4 @@ git remote add origin https://github.com/GaganSharmaGitHub/GirlScript-Education-
 ```
 git pull origin master
 ```
-5   . Your resources are up to date now :D
+5. Your resources are up to date now :D

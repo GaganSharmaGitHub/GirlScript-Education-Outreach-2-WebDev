@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text format</title>
+</head>
+<body>
+    <b> Bold text</b> <br>
+    <i>italic</i><br>
+    <del>deleted</del><br>
+    <mark>marked</mark><br>
+    <sub>subscript</sub><br>
+    <sup>superscript</sup><br>
+   <pre>
+       <code>
+        import 'package:flutter/material.dart';
+class Playerlists extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('Choose Player'),
+          elevation: 0,
+          centerTitle: true,
+          backgroundColor: Colors.deepOrangeAccent,
+          //backgroundColor: Color(Colors.amber),
+        ),
+        body: Text('player'),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          child: Icon(Icons.shuffle),        
+        ),
+        
+      );
+  }
+}
+
+    </code>
+</pre>
+</body>
+</html>
