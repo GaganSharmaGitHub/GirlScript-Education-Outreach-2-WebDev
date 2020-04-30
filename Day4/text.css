@@ -1,0 +1,58 @@
+section#textStyle p.blue{
+    color: green;
+}
+p.center{
+    text-align: center;
+}
+p.left{
+    text-align: left;
+}
+p.right{
+    text-align: right;
+}
+.px{
+    font-size: 30px;
+}
+.percent{
+    font-size: 40%;
+}
+.view{
+    font-size: 5vw;
+}
+p.textdeco{
+    color: hotpink;
+}
+p.textdeco span#cross{
+    text-decoration: line-through;
+}
+span#under{
+    text-decoration: underline;
+}
+span#over{
+    text-decoration: overline;
+}
+p.textdeco a{
+    color: black;
+    text-decoration: none;
+}
+p.textrans{
+    background-color: brown;
+}
+p.textrans span.small{
+    background-color: cadetblue;
+    text-transform: lowercase;
+}
+
+p.textrans span.up{
+    background-color: rgb(197, 20, 182);
+    text-transform: uppercase;
+}
+
+p.textrans span.cap{
+    background-color: rgb(17, 216, 67);
+    text-transform: capitalize;
+}
+div.family{
+    color: darkmagenta;
+    font-family: 'Pacifico', cursive;
+}

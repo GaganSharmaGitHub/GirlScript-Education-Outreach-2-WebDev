@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box styles</title>
+    <link rel="stylesheet" href="./box.css">
+</head>
+<body>
+    <div class="backgroundBlue">
+      <h3>
+          this has a blue background
+      </h3>
+      <h4>
+          while we're here lets discuss colors, colors can be mentioned in 4 ways
+      </h4>
+      <ol>
+          <li style="background-color: chocolate;">color Name: just type in name of the color, ex chocolate </li>
+          <li style="background-color: rgb(0, 255, 42);">rgba: value of red blue green and opacity(rgb are in range 0-255, a is 0-1) </li>
+          <li style="background-color: #e00e82;">hex code: 6 character value #rrggbb </li>
+          <li style="background-color: hsla(159, 100, 40, 1);">hsla: hue(0-360) saturation(0-100) lightness(0-100) and opacity(0-1) </li>
+        </ol>
+
+    </div>
+    <div class="backgroundimg">
+      <h3>
+          this has an image background
+      </h3>
+    </div>
+    <div class="padding1 backgroundBlue">
+     <h3>
+         this has a background and some padding
+     </h3>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam cupiditate, nobis illum blanditiis praesentium ducimus quod tempora laboriosam nostrum commodi facere eligendi ullam, corrupti repudiandae sapiente alias. Vero, autem.
+    </div>
+    <div class="margin1 backgroundimg">
+        <h3>
+            this has some margin and an image
+        </h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum a numquam corporis laboriosam! Repellat ullam perferendis voluptates nihil veniam molestiae, qui ipsam suscipit architecto tenetur impedit facilis. Temporibus, ratione exercitationem!
+    </div>
+    <div id="backgroundRed" class="heightWidthpx">
+        <h3>there are multiple units to define length in css</h3>
+        this uses pixels as unit
+    </div>
+    <div class="heightWidthpercent backgroundBlue">
+        this uses percentage so it is relative to it's parent
+    </div>
+    <div class="heightWidthView">
+        this is relative to screen size
+    </div>
+</body>
+</html>
