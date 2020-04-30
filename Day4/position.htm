@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            
+        div.box{
+            background-color: brown;
+            border: 1px black solid;            
+            height: 100px;
+            width: 100px;
+            color: white;
+            margin: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="
+    position: relative;
+     top: 50px;
+      left: 100px;" class="box">
+      this box is positioned relative to its original position
+    </div>
+    <div class="box" style="
+    position: sticky;
+     top: 8px;
+      right: 40px;">
+    this will stick
+    </div>
+    <br><br><br>
+    <br>
+    <br>
+    <div style="position: relative;
+     background-color: rgb(42, 50, 165);
+            border: 1px black solid;            
+            height: 500px;
+            width: 500px;
+    ">
+      <div class="box" 
+      style="position: absolute; 
+      top: 50px; 
+      left: 40px;"
+      >
+          absolute is relative to parent with position relative
+      </div>
+      <div class="box">some text1</div>
+      <div class="box">some text2</div>
+
+    </div>
+    <div class="box" style="position: fixed;
+     bottom: 8px;
+      right: 40px;">
+    this will remain here
+    <img src="./res/burg.png" >
+    </div>
+
+</body>
+</html>

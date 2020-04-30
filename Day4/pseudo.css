@@ -1,0 +1,46 @@
+div{
+    background-color: darkmagenta;
+    height: 50px;
+    width: 50px;
+    border: darkorange 3px solid;
+    margin: 10px;
+}
+div:hover{
+    background-color: darkorange;
+    border: black dashed 4px;
+}
+div:active{
+    background-color: blue;
+}
+input{
+    background-color: blue;
+    color:white;
+}
+input:focus{
+    background-color: red;
+    color:black;
+}
+p.hidepar{
+    background-color: brown;
+    display: block;
+    height: 100px;
+    width: 400px;
+}
+p.hidepar span{
+    
+    color: rgba(0, 0, 0, 0);
+}
+p.hidepar:hover span{
+    color: darkblue;
+}
+input#check:checked ~ label{
+    color: darkcyan;
+}
+input#checkell::after{
+    content: '  unchecked';
+    color: red;
+}
+input#checkell:checked::after{
+    content: '  checked';
+    color: blue;
+}

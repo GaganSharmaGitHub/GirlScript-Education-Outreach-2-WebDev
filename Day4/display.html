@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and position</title>
+    <style>
+        div.box{
+            background-color: brown;
+            border: 1px black solid;            
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+        }
+        div.inlineblock div.box{
+        display: inline-block;
+        }
+        div.block div.box{
+            display: block;
+        }
+        div.inline div.box{
+        display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <h3>Blocks</h3>   
+    <div class="box">1This is some text inside boxes</div>
+    <div class="box">2This is some text inside boxes</div>
+    <div class="box">3This is some text inside boxes</div>
+    <div class="box">4This is some text inside boxes</div>
+    </div>
+    
+    <div class="inline">
+        <h3>Inline</h3>   
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    </div>
+
+    <div class="inlineblock">
+        <h3>Inline-block</h3>   
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    <div class="box">This is some text inside boxes</div>
+    </div>
+</body>
+</html>
