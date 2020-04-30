@@ -1,11 +1,15 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 div.backgroundBlue{
     background-color: blue;
 }
 div.backgroundimg{
-    background-image: url('https://images.unsplash.com/photo-1558244661-d248897f7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80');
+    background-image: url('./res/burg.png');
 }
 div.padding1{
-    padding: 100px;
+    padding: 100px 50px 70px 30px;
 }
 div.margin1{
     margin: 100px;
