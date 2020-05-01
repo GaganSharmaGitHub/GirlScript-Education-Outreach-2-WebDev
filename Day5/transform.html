@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: black dashed 3px;
+            background-color: springgreen;
+        }
+        .box2{
+            transform: translate(20px, 20px);
+        }
+        .box3{
+            transform: rotate(60deg);
+        }
+        .box4{
+            transform: scaleX(0.5);
+        }
+        .box5{
+            transform: scaleY(1.5);
+        }
+        .box6{
+            transform-style: preserve-3d;
+            transform: rotateY(50deg);
+        }
+        .box7{
+            transform: skewX(20deg);
+        }
+        .box8{
+            transform: skewY(30deg);
+        }
+        .box9{
+            transform:scale(0.5,1.5);
+        }
+        .box10{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        box 1
+        <br>
+        original box
+    </div>
+    <br>
+    <br>
+    <div class="box box2">
+        box 2
+        transform: translate(20px, 20px);
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="box box3">
+        box 3
+        transform: rotate(60deg);
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="box box4">box 4
+        <br>
+        transform: scaleX(0.5);
+    </div>
+    <br>
+    <br>
+    <div class="box box5">
+        box 5
+        <br>
+        transform: scaleY(1.5);
+    </div>
+    <br>
+    <br>
+    <div class="box box6">box 6
+        <br>
+        transform-style: preserve-3d;
+        transform: rotateY(50deg); 
+    </div>
+    <br>
+    <br>
+    <div class="box box7">
+        box 7
+        <br>
+        transform: skewX(20deg);
+    </div>
+    <br>
+    <br>
+    <div class="box box8">
+        box 8
+        <br>
+        transform: skewY(30deg);
+    </div>
+    <br>
+    <br>
+    <div class="box box9">
+        box 9
+        <br>
+        transform:scale(0.5,1.5);
+    </div>
+    <br>
+    <br>
+    <div class="box box10">
+        box 10
+    <br>
+    original box
+    </div><br><br>
+</body>
+</html>
