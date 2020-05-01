@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
+    <style>
+        
+     .pc{
+         display: block;
+     }
+     .mobile{
+         display: none;
+     }
+        @media screen and (max-width:800px) {
+     body{
+         background-color: chartreuse;
+     }
+     .pc{
+         display: none;
+     }
+     .mobile{
+         display: block;
+     }
+     }
+    </style>
 </head>
 <body>
-    
+    <h1 class="mobile">You are using a mobile</h1>
+    <h1 class="pc">You are on PC</h1>
 </body>
 </html>
