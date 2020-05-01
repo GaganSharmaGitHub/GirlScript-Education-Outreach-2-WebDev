@@ -21,26 +21,29 @@ input:focus{
     color:black;
 }
 p.hidepar{
-    background-color: brown;
+    background-color: rgb(31, 8, 8);
     display: block;
+    color: snow;
     height: 100px;
     width: 400px;
 }
 p.hidepar span{
-    
+    font-size: 200%;
     color: rgba(0, 0, 0, 0);
 }
 p.hidepar:hover span{
-    color: darkblue;
+    color: rgb(170, 170, 245);
 }
 input#check:checked ~ label{
     color: darkcyan;
 }
 input#checkell::after{
-    content: '  unchecked';
+    content: 'unchecked';
     color: red;
+    position: relative;
+    left: 20px;
 }
 input#checkell:checked::after{
-    content: '  checked';
+    content: 'checked';
     color: blue;
 }

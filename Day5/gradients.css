@@ -5,3 +5,17 @@
     width: 200px;
     float: left;
 }
+body{
+    background: rgb(63,189,251);
+background: -moz-linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,159,66,1) 40%, rgba(77,252,70,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,159,66,1) 40%, rgba(77,252,70,1) 100%);
+background: linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,159,66,1) 40%, rgba(77,252,70,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3fbdfb",endColorstr="#4dfc46",GradientType=1);
+}
+#g4{
+ background: rgb(63,189,251);
+background: -moz-linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,66,74,1) 40%, rgba(101,70,252,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,66,74,1) 40%, rgba(101,70,252,1) 100%);
+background: linear-gradient(90deg, rgba(63,189,251,1) 0%, rgba(181,66,74,1) 40%, rgba(101,70,252,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3fbdfb",endColorstr="#6546fc",GradientType=1);
+}

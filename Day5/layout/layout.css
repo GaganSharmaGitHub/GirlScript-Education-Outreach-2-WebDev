@@ -1,0 +1,79 @@
+body{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+}
+header{
+    height: 80px;
+    background-color: slateblue;
+    width: 100vw;
+    padding-left: 20px;
+    position: fixed;
+    top: 0px;
+    color: white;
+    z-index: 20;
+    /*Remind me to discuss z index in class*/
+}
+header img{
+    height: 90%;
+    display: inline-block;
+}
+header h1{
+    display: inline-block;
+    font-size: 50px;
+    position: relative;
+    top: -25px;
+}
+section#body{
+    margin-top: 90px;
+    width: 100vw;
+}
+#body #sidebar{
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+    background-color: slateblue;
+}
+#body main{
+    display: inline-block;
+    width: 79%;
+    overflow: hidden;
+}
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: slateblue;
+}
+button.prettyButton{
+    background-color: slateblue;
+    border: 4px rgb(90, 90, 90) solid;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 110%;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+button.prettyButton span{
+    font-size: 0px;
+}
+button.prettyButton:hover{
+    background-color: white;
+    color: slateblue;
+    border: 4px slateblue solid;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+button.prettyButton:hover span{
+    font-size: 100%;
+}
+button.prettyButton:active{
+    background-color: slateblue;
+    border: 4px rgb(90, 90, 90) solid;
+    color: #ffffff;
+}

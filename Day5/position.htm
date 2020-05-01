@@ -25,16 +25,26 @@
       left: 100px;" class="box">
       this box is positioned relative to its original position
     </div>
+    <br>
+    <br><br><br><br>
     <div class="box" style="
-    position: sticky;
-     top: 8px;
-      right: 40px;">
+    height: 100px;
+    width: 500px;
+    color: rgb(240, 16, 210);
+    font-size: 200%;
+    overflow-x: hidden;
+    overflow-y: scroll;">
+
+
     this will stick
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima temporibus aspernatur ullam eaque itaque quod molestiae nisi repudiandae aliquid, non, magni minus voluptates accusantium tempora expedita, at quas cumque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore maxime adipisci assumenda doloribus, harum dolore nemo nulla qui necessitatibus corporis id itaque sit, eum, dolor quod mollitia? Aliquam, molestias.
     </div>
     <br><br><br>
     <br>
     <br>
-    <div style="position: relative;
+    <div style="
+    position: relative;
      background-color: rgb(42, 50, 165);
             border: 1px black solid;            
             height: 500px;
@@ -42,20 +52,23 @@
     ">
       <div class="box" 
       style="position: absolute; 
-      top: 50px; 
-      left: 40px;"
+      bottom: 50px; 
+      left: 40px;
+      float: left;"
       >
           absolute is relative to parent with position relative
       </div>
+      <div class="box" style="float: right; display: block;">some text2</div>
+      <div class="box" style="float: left; display: block;">some text2</div>
       <div class="box">some text1</div>
-      <div class="box">some text2</div>
+      <div class="box" style="float: left; display: block;">some text2</div>
 
     </div>
-    <div class="box" style="position: fixed;
-     bottom: 8px;
-      right: 40px;">
-    this will remain here
-    <img src="./res/burg.png" >
+    <div class="box" style="
+    position: fixed;
+     top: 0px;
+      width: 100vw;">
+    <img src="./res/burg.png" style="display: inline-block;"><h1 style="display: inline-block;">company name</h1>
     </div>
 
 </body>

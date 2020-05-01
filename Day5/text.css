@@ -1,7 +1,7 @@
 section#textStyle p.blue{
-    color: green;
+    color: blue;
 }
-p.center{
+.center{
     text-align: center;
 }
 p.left{
@@ -11,21 +11,23 @@ p.right{
     text-align: right;
 }
 .px{
-    font-size: 30px;
+    font-size: 10px;
 }
 .percent{
-    font-size: 40%;
+    font-size: 200%;
 }
 .view{
     font-size: 5vw;
 }
 p.textdeco{
     color: hotpink;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
 }
 p.textdeco span#cross{
     text-decoration: line-through;
 }
-span#under{
+span.under{
     text-decoration: underline;
 }
 span#over{
@@ -37,6 +39,7 @@ p.textdeco a{
 }
 p.textrans{
     background-color: brown;
+    font-size: 40px;
 }
 p.textrans span.small{
     background-color: cadetblue;
