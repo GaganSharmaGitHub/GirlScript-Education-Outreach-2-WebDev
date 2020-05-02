@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <style>
+        :root{
+    --color1:#4834d4;
+    --color2:#d1d1d1;
+    --color3:rgb(39, 39, 39);
+    --color4:#686de0;
+    --navHeight:60px;
+        }
+        body{
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #fixedHead{
+            display: flex;
+            box-sizing: border-box;
+            width: 100vw;
+            align-content: stretch;
+            overflow: hidden;
+            height: var(--navHeight);
+            background-color: var(--color1);
+            color: var(--color2);
+            padding: 0px;
+            position: fixed;
+            font-size: var(--navHeight);
+            top: 0px;
+            align-content: stretch;
+        }
+        #fixedHead img#logoInHead{
+            height: 100%;
+            width: calc(var(--navHeight)); 
+            padding: 0;
+            margin: 0;  
+        }
+        #fixedHead #h1InHead{
+            font-size: 70%;
+            display: block;
+            transform: translateY(-25px);
+        }
+        button#openSideButton{
+            display: none;
+            color: var(--color2);
+            background-color: var(--color1);
+            border: none;
+            font-size: 50%;
+        }
+        #fixedHead #navOptionsList{
+            display: flex;
+            font-size: 40%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            align-content: stretch;
+            list-style-type: none;
+        }
+        #fixedHead #navOptionsList li.navOption{
+            display: block;
+            padding: 10px ;
+            line-height: -4px;
+            background-color: var(--color4);
+            border: 2px solid var(--color2);
+            border-top:0px none;
+            transition: 0.5s ;
+        }
+        #fixedHead #navOptionsList li.navOption:hover{
+        background-color: var(--color2);
+        color: var(--color1);
+        cursor: pointer;
+        }
+        @media screen and (max-width:800px) {
+     body{
+         background-color: chartreuse;
+     }
+     #fixedHead{
+         padding-left: 50px;
+         overflow: visible;
+     }
+     button#openSideButton{
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 5;
+        }
+     #fixedHead #navOptionsList{
+         flex-direction: column;
+         display: none;
+         width: 100%;
+         position: fixed;
+         max-width: 300px;
+         top: var(--navHeight);
+         left: 0;
+     }
+     #fixedHead #navOptionsList.show{
+    display: block; 
+    }
+     }
+    </style>
+    <header id="fixedHead">
+        <img src="./res/logo.png" id="logoInHead" alt="logo">
+        <h1 id="h1InHead">
+            CompanyName
+        </h1>
+        <div class="filler"
+        style="flex: 1;"
+        > </div>
+        <div id="navOptions">  
+        <button id="openSideButton" onclick='
+        var element = document.getElementById("navOptionsList");
+
+if (element.classList) {
+  element.classList.toggle("show");
+} else {
+  // For IE9
+  var classes = element.className.split(" ");
+  var i = classes.indexOf("show");
+
+  if (i >= 0)
+    classes.splice(i, 1);
+  else
+    classes.push("show");
+    element.className = classes.join(" ");
+}
+        '>
+            <i class="fa fa-reorder"></i>
+        </button>
+        <ol id='navOptionsList'>
+            <li class="navOption">option 1</li>
+            <li class="navOption">option 2</li>
+            <li class="navOption">option 3</li>
+            <li class="navOption">option 4</li>
+        </ol>
+    </div>
+    </header>
+    <br><br><br>
+    Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+</body>
+</html>

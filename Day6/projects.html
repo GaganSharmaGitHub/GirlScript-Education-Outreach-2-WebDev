@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+  <div class="icon">
+  <style>
+            .buttonIcon {
+            border-radius: 4px;
+            background-color: #8c7ae6;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px 0 20px 0;
+            width: 100px;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          .buttonIcon i{
+            font-size: 0;
+            transition: all 0.2s;
+
+          }
+          .buttonIcon:hover i{
+            font-size: 100%;
+          }
+
+  </style>    
+  <button class="buttonIcon">
+    <i class="fa fa-google" aria-hidden="true"></i>
+    <span>Google</span>
+  </button>
+  </div>
+    <div class="hover">
+        <style>
+        .buttonHover {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px 0 20px 0;
+            width: 200px;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          
+          .buttonHover span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            margin-left: 30px;
+            transition: 0.2s;
+          }
+          
+          .buttonHover b{
+            opacity: 0;
+            transition: 0.2s;
+          }
+          .buttonHover:hover{
+            background-color: #fc6e43;
+            box-shadow: 0px 0px 5px 5px #f4511e;
+          }
+          .buttonHover:hover span {
+            margin-left: 0px;
+
+          }
+          
+          .buttonHover:hover b {
+            opacity: 1;
+          }
+          
+          .buttonHover:active{
+            background-color: #ffffff;
+            color: black;
+            border: 1px solid #000000;
+          }
+        </style>          
+          <button class="buttonHover">
+              <span>Let's Go </span>
+            <b>>></b>
+            </button>      
+    </div>
+    <div class='rotate'>
+      <style>
+        .rockNroll{
+        background-color: rgb(240, 240, 240);
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px;
+        transition: all 0.2s ;
+        }
+        .holder:hover .rockNroll{
+          transform: rotate(359deg);
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          background: #40E0D0;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to bottom left, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to bottom left, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          color: #ffffff;
+        }
+      </style>
+      <div class="holder">
+     <button class="rockNroll">Rock n Roll</button>
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="clicky">
+        <style>
+            .buttonClicky {
+              padding: 15px 25px;
+              font-size: 24px;
+              text-align: center;
+              cursor: pointer;
+              outline: none;
+              color: #fff;
+              background-color: rgb(25, 163, 59);
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .buttonClicky:hover {background-color: #3e8e41}
+            
+            .buttonClicky:active {
+              background-color: #06f57d;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
+            
+            <button class="buttonClicky">Clicky button</button>
+            
+    </div>
+    <br><br>
+    <div class="waterButton">
+        <style>
+            .buttonWater{
+            border-radius: 4px;
+            border: none;
+            color: rgb(1, 28, 49);
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;           
+            background-image: url('./res/wave.png');
+            background-repeat: repeat-x;
+            background-position: 0 -100%;
+            transition: 1.5s ease;}
+            .buttonWater:hover{
+              background-position: 500% 100%;
+            }
+        </style>
+        <button class="buttonWater">Water</button>
+    </div>
+    <br>
+    <div class="dropDown">
+        <style>
+            .buttonDropDown{
+                background-color: rgb(32, 32, 32);
+                border: 1px white solid;
+                color: white;
+                padding: 10px;
+                width: 200px;
+                position: relative;
+            }
+            .dropDownList{
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                z-index: 4;
+                display: none;
+                list-style-type: none;
+                background-color: rgb(63, 63, 63);
+            }
+            .buttonDropDown:hover .dropDownList{
+                display: block;
+            }
+            .dropDownOption{
+                padding: 3px 0 3px 0;
+            }
+            .dropDownOption:hover{
+                background-color: rgb(104, 104, 104);
+                cursor: pointer;
+            }
+        </style>
+        <button class="buttonDropDown">
+            DropDown ▼
+            <ul class="dropDownList">
+                <li class="dropDownOption">option 1</li>
+                <li class="dropDownOption">option 2</li>
+                <li class="dropDownOption">option 3</li>
+                <li class="dropDownOption">option 4</li>
+                <li class="dropDownOption">option 5</li>
+            </ul>
+        </button>
+    </div>
+    <br><br><br><br>
+    <div class="sharePop">
+      <style>
+        .containerShareButton{
+          padding: 10px;
+          width: fit-content;
+          height: fit-content;
+          z-index:3;
+        }
+        .buttonSharePop{
+         display:block;
+         height:50px;
+         width:50px;
+         cursor: pointer;
+         border-radius: 50%;
+         color: white;
+         font-size: 35px;
+         background-color: #f4511e;
+         border: 1px white solid;
+        }
+        .buttonSharePop *{
+          transition: all 0.1s ;
+        }
+        .buttonSharePop .shareOpList{
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          position: relative;          
+        }
+        .buttonSharePop .shareOpList li.shareOp{
+        position: absolute;
+        box-sizing: border-box;
+        z-index: -2;
+         display:block;
+         height:50px;
+         width:50px;
+         border-radius: 50%;
+         color: white;
+         font-size: 30px;
+         background-color: #f4511e;
+         border: 1px white solid;
+         padding: 5px;
+        }
+        .shareOpList .shareOp{
+          bottom:-5px;
+          left: -8px;
+        }
+        .containerShareButton:hover .shareOp{
+          z-index: 10;
+        }
+        .containerShareButton:hover #op1{
+          bottom:50px;
+          left: -10px;
+          background-color: #00acee ;
+        }
+        
+        .containerShareButton:hover #op2{
+          bottom:25px;
+          background-color: #3b5998;
+          left: 40px;
+        }
+        .containerShareButton:hover #op4{
+          top:50px;
+          left: -10px;
+          background-color: #6e5494;
+        }
+        
+        .containerShareButton:hover #op3{
+          top:25px;
+          left: 40px;
+          background-color: #0e76a8;
+        }
+      </style>
+    <div class="containerShareButton">
+    <button class="buttonSharePop">
+      <ul class="shareOpList">
+         
+         <li id="op1" class="shareOp">
+           <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+         <li id="op2" class="shareOp">
+        <i class="fa fa-facebook" aria-hidden="true"></i>  
+        </li>
+         <li id="op3" class="shareOp">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </li>
+         <li id="op4" class="shareOp">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        </li>
+         <span class="mainShow">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+       
+        </ul>
+    </button>
+    </div>
+    </div>
+</body>
+</html>

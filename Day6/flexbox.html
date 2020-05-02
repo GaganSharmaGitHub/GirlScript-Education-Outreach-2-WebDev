@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flexBasics {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: seagreen;
+}
+
+.flexBasics div {
+  background-color: #f1f1f1;
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.col{
+    flex-direction: column;
+}
+</style>
+</head>
+<body>
+    <h1>flexbox</h1>
+<div class="flexBasics">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<hr>
+<h2>flex wrap</h2>
+
+<div class="flexBasics wrap">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<hr>
+<h2>flex-direction Column</h2>
+
+<div class="flexBasics col">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<hr>
+<h1>Align content</h1>
+<h2>align content:start</h2>
+<div class="flexBasics"
+style="height: 300px;
+align-items: flex-start;
+"
+>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>align content:end</h2>
+<div class="flexBasics"
+style="height: 300px;
+align-items: flex-end;
+"
+>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>align content:stretch</h2>
+<div class="flexBasics"
+style="height: 300px;
+align-items: stretch;
+"
+>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>align content:center</h2>
+<div class="flexBasics"
+style="height: 300px;
+align-items: center;
+"
+>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<hr>
+<h1>Justify Content</h1>
+<h2>justify content: center</h2>
+<div style="justify-content: center;
+ height: 700px;" class="flexBasics col">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>justify content: space-between</h2>
+<div style="justify-content: space-between;
+ height: 600px;" class="flexBasics col">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>justify content: space-around</h2>
+<div style="justify-content: space-around;
+ height: 600px;" class="flexBasics col">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+<h2>justify content: flex start</h2>
+<div style="justify-content: flex-start;
+ height: 100px;" class="flexBasics">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+
+<h2>justify content: flex end</h2>
+<div style="justify-content: flex-end;
+ height: 200px;" class="flexBasics">
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+    <div>o</div>
+</div>
+
+</body>
+</html>
