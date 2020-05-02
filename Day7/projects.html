@@ -10,9 +10,9 @@
   <div class="icon">
   <style>
             .buttonIcon {
-            border-radius: 4px;
             background-color: #8c7ae6;
             border: none;
+            border-radius: 4px;
             color: #FFFFFF;
             text-align: center;
             font-size: 20px;
@@ -20,20 +20,17 @@
             width: 100px;
             transition: all 0.2s;
             cursor: pointer;
-            margin: 5px;
           }
           .buttonIcon i{
             font-size: 0;
             transition: all 0.2s;
-
           }
           .buttonIcon:hover i{
             font-size: 100%;
           }
-
   </style>    
   <button class="buttonIcon">
-    <i class="fa fa-google" aria-hidden="true"></i>
+    <i class="fa fa-cart-plus" aria-hidden="true"></i>
     <span>Google</span>
   </button>
   </div>
@@ -101,7 +98,7 @@
         }
         .holder:hover .rockNroll{
           transform: rotate(359deg);
-          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;/*shadow as border*/
           background: #40E0D0;  /* fallback for old browsers */
           background: -webkit-linear-gradient(to bottom left, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
           background: linear-gradient(to bottom left, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -109,7 +106,7 @@
         }
       </style>
       <div class="holder">
-     <button class="rockNroll">Rock n Roll</button>
+     <button class="rockNroll">Spinning button</button>
 
       </div>
     </div>
@@ -218,7 +215,10 @@
           padding: 10px;
           width: fit-content;
           height: fit-content;
-          z-index:3;
+          z-index:10;
+          position: fixed;
+          bottom: 100px;
+          left: 200px;
         }
         .buttonSharePop{
          display:block;

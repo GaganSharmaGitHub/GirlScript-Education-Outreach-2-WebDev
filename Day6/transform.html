@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
@@ -11,11 +12,14 @@
             border: black dashed 3px;
             background-color: springgreen;
         }
-        .box2{
-            transform: translate(20px, 20px);
+        .box2:hover{
+            transition: 2s;
+            transform: translate(50px, 20px);
         }
-        .box3{
-            transform: rotate(60deg);
+        .box3:hover{
+            transition: 2s;
+            font-size: 150%;
+            transform: rotate(20deg);
         }
         .box4{
             transform: scaleX(0.5);
@@ -25,7 +29,7 @@
         }
         .box6{
             transform-style: preserve-3d;
-            transform: rotateY(50deg);
+            transform: rotateY(30deg);
         }
         .box7{
             transform: skewX(20deg);
@@ -45,6 +49,8 @@
 </head>
 <body>
     <h4>also learn transition</h4>
+    <i class="fa fa-apple"></i>
+
     <div class="box box1">
         box 1
         <br>

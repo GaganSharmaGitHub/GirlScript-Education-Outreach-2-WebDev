@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .flipCard {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+        }
+        
+        .flipCardInner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .flipCard:hover .flipCardInner {
+          transform: rotateY(180deg);
+        }
+        
+        .flipCardFront, .flipCardBack {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .flipCardFront {
+          background-color: #bbb;
+          color: black;
+        }
+        
+        .flipCardBack {
+          background-color: darkorange;
+          color: white;
+          transform: rotateY(180deg);
+        }
+        .flipCard button{
+            font-size: 150%;
+            background-color: darkslateblue;
+            color: white;
+            border: white 3px solid;
+            padding: 3px 10px 3px 10px;
+        }
+        </style>
+        
+        
+        <div class="flipCard">
+          <div class="flipCardInner">
+            <div class="flipCardFront">
+              <img src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Avatar"
+               style="width:300px;">
+            </div>
+            <div class="flipCardBack">
+              <h1>Toucan</h1> 
+              <b>Colorful bird</b> 
+              <p>Toucans are arboreal and typically lay 2–21 white eggs in their nests. They make their nests in tree hollows and holes excavated by other animals such as woodpeckers—the toucan bill has very limited use as an excavation tool.</p>
+              <button>Link</button>
+            </div>
+          </div>
+        </div>
+        
+</body>
+</html>

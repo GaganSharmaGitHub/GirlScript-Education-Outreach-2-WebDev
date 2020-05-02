@@ -1,11 +1,13 @@
 :root{
-    --color1:green;
+    --color1:rgb(92, 250, 92);
     --color2:red;
     --color3:blue;
-    --color4:yellow;
+    --color4:rgb(255, 136, 0);
+    --bigFont:60px;
 }
 h1.text1{
     color: var(--color1);
+    font-size: var(--bigFont);
     background-color: var(--color4);
 }
 h1.text2{

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+    --cubeSize:200px;
+    --cubeSizeNegHalf:-100px;
+    --cubeSizeHalf:100px;
+}
+        .cube-container {
+  width: var(--cubeSize);
+  height: var(--cubeSize);
+  position: relative;
+  perspective: 1000px;
+}
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: spin 3s infinite linear;
+}
+@keyframes spin {
+  0% { transform: translateZ(  var(--cubeSizeNegHalf) ) rotateY(360deg) rotateZ(0deg) rotateX(45deg) }
+  50% { transform: translateZ( var(--cubeSizeNegHalf) ) rotateY(180deg) rotateZ(180deg) rotateX(45deg) }
+  100% { transform: translateZ( var(--cubeSizeNegHalf) ) rotateY(0deg) rotateZ(360deg) rotateX(45deg) }
+}
+#cube div{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: rgb(0, 0, 0);
+color: rgb(143, 80, 80);
+  border: 1px dotted rgb(0, 0, 0);
+  backface-visibility: hidden;
+}
+#cube img{
+    width: 100%;
+    height: 100%;
+}
+#cube .front  { transform: rotateY(   0deg ) translateZ( var(--cubeSizeHalf) ); }
+#cube .back   { transform: rotateX( 180deg ) translateZ( var(--cubeSizeHalf) ); }
+#cube .right  { transform: rotateY(  90deg ) translateZ( var(--cubeSizeHalf) ); }
+#cube .left   { transform: rotateY( -90deg ) translateZ( var(--cubeSizeHalf) ); }
+#cube .top    { transform: rotateX(  90deg ) translateZ( var(--cubeSizeHalf) ); }
+#cube .bottom { transform: rotateX( -90deg ) translateZ( var(--cubeSizeHalf) ); }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <div class="cube-container">
+        <div id="cube">
+          <div class="face front">
+              <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" >
+          </div>
+          <div class="face back">
+              <img src="https://images.unsplash.com/photo-1548715837-972bb0966819?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" alt="">
+          </div>
+          <div class="face left">
+              <img src="https://images.unsplash.com/photo-1493236296276-d17357e28888?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <div class="face right">
+              <img src="https://images.unsplash.com/photo-1517001657880-5608528ca7fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <div class="face top">
+              <img src="https://images.unsplash.com/photo-1559152218-5991d972f360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <div class="face bottom">
+              <img src="https://images.unsplash.com/photo-1541980698109-12435655ec1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+        </div>
+        </div>
+</body>
+</html>

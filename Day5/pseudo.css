@@ -1,9 +1,12 @@
 div{
     background-color: darkmagenta;
     height: 50px;
-    width: 50px;
+    width: 100px;
     border: darkorange 3px solid;
     margin: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
 }
 div:hover{
     background-color: darkorange;
@@ -26,10 +29,13 @@ p.hidepar{
     color: snow;
     height: 100px;
     width: 400px;
+    text-shadow: 2px 2px 5px aqua,-2px -2px 5px pink;
 }
 p.hidepar span{
     font-size: 200%;
     color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+
 }
 p.hidepar:hover span{
     color: rgb(170, 170, 245);
