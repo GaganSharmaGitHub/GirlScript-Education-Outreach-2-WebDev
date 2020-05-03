@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    @keyframes bgChange {
+  0%   {background-color:red; }
+  25%  {background-color:yellow;}
+  50%  {background-color:blue; }
+  75%  {background-color:green;}
+  100% {background-color:red; }
+}
+div{
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+}
+div.animatedBG{
+
+    animation-name: bgChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+  0%   {transform: rotate(30deg); }
+  25%  {transform: translateX(500px);}
+  50%  {transform: rotate(-30deg); }
+  75%  {transform: translateX(0px);}
+  100% {transform: rotate(0deg); }
+}
+div.moving{
+
+animation-name: move;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+</style>
+<body>
+    <div class="animatedBG">
+        Animated background
+    </div>
+    <br><br><br>
+    <div class="moving">
+        let's go
+    </div>
+</body>
+</html>
